@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const MainDataWrapper = styled.div`
   display: flex;
@@ -32,6 +32,7 @@ export const MainDataWrapper = styled.div`
     }
   }
 `;
+
 export const Headline = styled.div`
   display: flex;
   align-items: center;

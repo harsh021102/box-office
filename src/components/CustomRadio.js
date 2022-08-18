@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+
 const RadioWrapper = styled.label`
   display: block;
   position: relative;
@@ -51,19 +52,15 @@ const RadioWrapper = styled.label`
     background: ${({ theme }) => theme.mainColors.blue};
   }
 `;
-const CustomRadio = ({label, ...restProps}) => {
-  return (
-    <div>
-        <RadioWrapper htmlFor='restProps.id'>
-            {label}
-            <input 
-            {...restProps}
-            type="radio" 
-            />
-            <span/>
-        </RadioWrapper>
-    </div>
-  )
-}
 
-export default CustomRadio
+const CustomRadio = ({ label, ...restProps }) => {
+  return (
+    <RadioWrapper htmlFor={restProps.id}>
+      {label}
+      <input {...restProps} type="radio" />
+      <span />
+    </RadioWrapper>
+  );
+};
+
+export default CustomRadio;
